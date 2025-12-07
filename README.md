@@ -100,7 +100,7 @@ Donde:
 ## 👥 Autores
 
 - **MaxitoDev** - [GitHub](https://github.com/maxitodev)
-- **Bitheos**
+- **Bitheos** - [GitHub](https://github.com/Bitheos)
 
 ## 📄 Licencia
 
