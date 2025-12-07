@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
-import { Atom, Sparkles } from "lucide-react"
+import { Sparkles, Github } from "lucide-react"
 
 export function Footer() {
   const [ref, inView] = useInView({
@@ -81,6 +81,28 @@ export function Footer() {
               <div className="w-16 h-px bg-gradient-to-r from-transparent to-zinc-700" />
               <Sparkles className="w-4 h-4 text-zinc-600" />
               <div className="w-16 h-px bg-gradient-to-l from-transparent to-zinc-700" />
+            </motion.div>
+
+            {/* GitHub Link */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex justify-center"
+            >
+              <motion.a
+                href="https://github.com/maxitodev/ReactorPilgrim"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-900/50 border border-zinc-800 hover:border-zinc-700 transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <Github className="w-4 h-4 text-zinc-500 group-hover:text-white transition-colors" />
+                <span className="text-sm font-mono text-zinc-500 group-hover:text-white transition-colors">
+                  Ver en GitHub
+                </span>
+              </motion.a>
             </motion.div>
 
             {/* Credits */}
