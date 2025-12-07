@@ -660,7 +660,6 @@ export function StatisticalAnalysis() {
                     </>
                   ) : (
                     <>
-                      <Sparkles className="w-5 h-5 text-purple-400" />
                       <span className="text-lg font-bold text-white font-mono tracking-wide">
                         ANALIZAR RESULTADOS CON IA
                       </span>
