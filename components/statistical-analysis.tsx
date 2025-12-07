@@ -653,7 +653,6 @@ export function StatisticalAnalysis() {
                 <div className="relative bg-black rounded-[14px] px-8 py-4 flex items-center gap-4 group-hover:bg-zinc-950 transition-colors">
                   {isAnalyzing ? (
                     <>
-                      <Loader2 className="w-5 h-5 text-purple-400 animate-spin" />
                       <span className="text-lg font-bold text-white font-mono tracking-wide">
                         ANALIZANDO...
                       </span>

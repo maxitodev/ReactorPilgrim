@@ -9,7 +9,7 @@
 
 **Proyecto de Probabilidad y Estadística**
 
-[Ver Demo](https://reactor-pilgrim.vercel.app) · [Reportar Bug](https://github.com/maxitodev/ReactorPilgrim/issues)
+[Ver Demo](https://proyecto-probabilidad-uamc.vercel.app/) · [Reportar Bug](https://github.com/maxitodev/ReactorPilgrim/issues)
 
 </div>
 
