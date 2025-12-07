@@ -122,27 +122,23 @@ export function HypothesisSection() {
                 04 · HIPÓTESIS
               </motion.span>
 
-              <div className="flex flex-col items-center mb-4 gap-1">
-                <div className="overflow-hidden">
-                  <motion.h2
-                    initial={{ y: 100, opacity: 0 }}
-                    animate={inView ? { y: 0, opacity: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 tracking-tight"
-                  >
-                    EL ENFOQUE
-                  </motion.h2>
-                </div>
-                <div className="overflow-hidden">
-                  <motion.h2
-                    initial={{ y: 100, opacity: 0 }}
-                    animate={inView ? { y: 0, opacity: 1 } : {}}
-                    transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight"
-                  >
-                    ESTADÍSTICO
-                  </motion.h2>
-                </div>
+              <div className="flex flex-col items-center mb-4 gap-2">
+                <motion.h2
+                  initial={{ y: 60, opacity: 0, filter: "blur(10px)" }}
+                  animate={inView ? { y: 0, opacity: 1, filter: "blur(0px)" } : {}}
+                  transition={{ duration: 0.8, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight text-center [text-shadow:0_0_30px_rgba(59,130,246,0.4),0_0_60px_rgba(59,130,246,0.2)]"
+                >
+                  EL ENFOQUE
+                </motion.h2>
+                <motion.h2
+                  initial={{ y: 60, opacity: 0, filter: "blur(10px)" }}
+                  animate={inView ? { y: 0, opacity: 1, filter: "blur(0px)" } : {}}
+                  transition={{ duration: 0.8, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 tracking-tight text-center"
+                >
+                  ESTADÍSTICO
+                </motion.h2>
               </div>
             </motion.div>
 

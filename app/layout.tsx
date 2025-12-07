@@ -12,26 +12,13 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Análisis Estadístico: Reactor Pilgrim I",
+  title: "Reactor Pilgrim I",
   description:
     "Aplicación de análisis estadístico usando distribución de Poisson para el caso del reactor nuclear Pilgrim I",
-  generator: "v0.app",
+  generator: "Next.js",
   icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
+    icon: "/image 2.jpg",
+    apple: "/image 2.jpg",
   },
 }
 

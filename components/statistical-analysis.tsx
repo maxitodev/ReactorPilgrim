@@ -6,7 +6,6 @@ import { useInView } from "react-intersection-observer"
 import { Calculator, AlertTriangle, Activity, BarChart3, CheckCircle2, XCircle, HelpCircle, Beaker, Sparkles, Bot, Loader2 } from "lucide-react"
 import { PoissonDistributionChart } from "@/components/poisson-chart"
 import { ZScoreVisualization } from "@/components/z-score-visualization"
-import GlitchText from "./GlitchText"
 import Image from "next/image"
 
 export function StatisticalAnalysis() {
@@ -220,33 +219,23 @@ export function StatisticalAnalysis() {
                 05 · ANÁLISIS ESTADÍSTICO
               </motion.span>
 
-              <div className="flex flex-col items-center mb-4 gap-1">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={inView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.5, delay: 0.2 }}
+              <div className="flex flex-col items-center mb-4 gap-2">
+                <motion.h2
+                  initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+                  animate={inView ? { opacity: 1, scale: 1, filter: "blur(0px)" } : {}}
+                  transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.4, 0.25, 1] }}
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight text-center [text-shadow:0_0_30px_rgba(147,51,234,0.4),0_0_60px_rgba(147,51,234,0.2)]"
                 >
-                  <GlitchText
-                    speed={0.5}
-                    enableOnHover={true}
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight"
-                  >
-                    CALCULADORA
-                  </GlitchText>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={inView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.5, delay: 0.4 }}
+                  CALCULADORA
+                </motion.h2>
+                <motion.h2
+                  initial={{ opacity: 0, scale: 0.8, filter: "blur(10px)" }}
+                  animate={inView ? { opacity: 1, scale: 1, filter: "blur(0px)" } : {}}
+                  transition={{ duration: 0.7, delay: 0.4, ease: [0.25, 0.4, 0.25, 1] }}
+                  className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-violet-300 to-purple-500 tracking-tight text-center"
                 >
-                  <GlitchText
-                    speed={0.5}
-                    enableOnHover={true}
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-tight !text-purple-400"
-                  >
-                    INTERACTIVA
-                  </GlitchText>
-                </motion.div>
+                  INTERACTIVA
+                </motion.h2>
               </div>
             </motion.div>
 
@@ -643,9 +632,9 @@ export function StatisticalAnalysis() {
             <motion.button
               onClick={handleAnalyzeWithAI}
               disabled={isAnalyzing}
-              className="group relative"
-              whileHover={{ scale: isAnalyzing ? 1 : 1.03 }}
-              whileTap={{ scale: isAnalyzing ? 1 : 0.98 }}
+              className="group relative cursor-pointer disabled:cursor-not-allowed"
+              whileHover={{ scale: isAnalyzing ? 1 : 1.05, y: isAnalyzing ? 0 : -3 }}
+              whileTap={{ scale: isAnalyzing ? 1 : 0.97 }}
             >
               {/* Outer glow */}
               <motion.div
