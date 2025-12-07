@@ -119,6 +119,7 @@ export function StatisticalAnalysis() {
           src="/losnumeros.jpeg"
           alt="Background"
           fill
+          loading="eager"
           className="object-cover opacity-15"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black" />

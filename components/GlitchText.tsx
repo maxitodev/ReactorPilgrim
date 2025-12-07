@@ -1,4 +1,6 @@
-import { FC, CSSProperties } from 'react';
+'use client';
+
+mport { FC, CSSProperties } from 'react';
 
 interface GlitchTextProps {
   children: string;
