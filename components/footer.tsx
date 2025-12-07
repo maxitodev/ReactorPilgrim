@@ -79,8 +79,6 @@ export function Footer() {
               className="flex items-center justify-center gap-3"
             >
               <div className="w-16 h-px bg-gradient-to-r from-transparent to-zinc-700" />
-              <Sparkles className="w-4 h-4 text-zinc-600" />
-              <div className="w-16 h-px bg-gradient-to-l from-transparent to-zinc-700" />
             </motion.div>
 
             {/* GitHub Link */}
