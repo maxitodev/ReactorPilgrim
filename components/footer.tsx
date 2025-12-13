@@ -118,9 +118,20 @@ export function Footer() {
                   className="relative text-zinc-400 cursor-pointer group"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <span className="relative z-10 group-hover:text-purple-400 transition-colors duration-300">MAXITODEV</span>
+                  <span className="relative z-10 group-hover:text-purple-400 transition-colors duration-300">MaxitoDev</span>
                   <motion.span
                     className="absolute inset-0 bg-purple-500/10 rounded-md -z-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                    style={{ padding: '2px 6px', margin: '-2px -6px' }}
+                  />
+                </motion.span>
+                <span className="text-zinc-700">,</span>
+                <motion.span
+                  className="relative text-zinc-400 cursor-pointer group"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <span className="relative z-10 group-hover:text-cyan-400 transition-colors duration-300">BITHEOS</span>
+                  <motion.span
+                    className="absolute inset-0 bg-cyan-500/10 rounded-md -z-0 opacity-0 group-hover:opacity-100 transition-opacity"
                     style={{ padding: '2px 6px', margin: '-2px -6px' }}
                   />
                 </motion.span>
@@ -129,9 +140,9 @@ export function Footer() {
                   className="relative text-zinc-400 cursor-pointer group"
                   whileHover={{ scale: 1.05 }}
                 >
-                  <span className="relative z-10 group-hover:text-cyan-400 transition-colors duration-300">BITHEOS</span>
+                  <span className="relative z-10 group-hover:text-emerald-400 transition-colors duration-300">YAEL</span>
                   <motion.span
-                    className="absolute inset-0 bg-cyan-500/10 rounded-md -z-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute inset-0 bg-emerald-500/10 rounded-md -z-0 opacity-0 group-hover:opacity-100 transition-opacity"
                     style={{ padding: '2px 6px', margin: '-2px -6px' }}
                   />
                 </motion.span>
